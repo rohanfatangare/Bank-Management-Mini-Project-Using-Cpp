@@ -78,15 +78,15 @@ public:
         }
     }
 
-    // void displayBalance(int accNumber) {
-    //     Account* acc = findAccount(accNumber);
-    //     if (acc != nullptr) {
-    //         cout << "Account Holder Name: " << acc->getAccountHolderName() << endl;
-    //         cout << "Current Balance: " << acc->getBalance() << endl;
-    //     } else {
-    //         cout << "Account not found!" << endl;
-    //     }
-    // }
+    void displayBalance(int accNumber) {
+        Account* acc = findAccount(accNumber);
+        if (acc != nullptr) {
+            cout << "Account Holder Name: " << acc->getAccountHolderName() << endl;
+            cout << "Current Balance: " << acc->getBalance() << endl;
+        } else {
+            cout << "Account not found!" << endl;
+        }
+    }
 };
 
 int main() {
